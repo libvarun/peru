@@ -1,0 +1,175 @@
+html,
+body {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+body {
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    padding-top: 3%;
+    /* space for the top nav bar */
+    font-size: 14px !important;
+}
+
+.loader {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 64px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/giphy.gif') 50% 40% no-repeat rgb(255, 255, 255);
+    background-size: 150px 150px;
+}
+.category {
+    cursor: pointer;
+}
+.models_list{cursor: pointer;font-size: 20px;/* margin-left: 20%; */margin-top: 56px;}
+.modal-header,.modal-body{text-align: center;}
+.add_urn{margin-top: 20px;}
+.status_msg{color: red;}
+.loader {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 64px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/giphy.gif') 50% 40% no-repeat rgb(255, 255, 255);
+    background-size: 150px 150px;
+}
+
+.gallery-container {
+    margin-top: 30px;
+}
+
+#forgeViewer {
+    height: 74% !important;
+    /* width: 76% !important; */
+    /* display: block; */
+    position: absolute;
+    /* bottom: 0; */
+    top: 20%;
+    /* left: 9%; */
+    /* right: 0; */
+}
+
+.logo_header {
+    font-size: 36px;
+}
+
+
+.login_prompt {
+    background-image: url(/img/autodesk-logo-large.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    height: 400px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 400px;
+}
+
+.login_prompt a {
+    color: #1059CE
+}
+
+
+.tz-gallery .thumbnail {
+    /* min-height: 457.93px; */
+    padding: auto 0;
+}
+
+.side_box{border: 1px solid black;height: 500px;float: right;margin-top: 65px;}
+.ckt_cnf,.add_objects{display: none}
+.ckt{height: 25px;border-radius: 10px;padding: 5px;
+    width: 250px;cursor: pointer;}
+.selected {
+    background-color:rgba(108, 229, 245, 0.836);
+}
+.ckt_item{border-radius: 10px;padding: 5px;cursor: pointer;}
+.selected_item {
+    background-color:rgba(108, 229, 245, 0.836);
+}
+.edit_buttons,.add_objs{visibility: hidden;margin-bottom: 15px;}
+/* .new_circuit_container{display: none;} */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 27px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 18px;
+    left: 6px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.item-list-container{padding: 8px;}
+.list-item{transition-property: background-color;
+  transition-timing-function: ease;
+  transition-duration: 1s;
+  transition-delay: 0s;
+  background-color: #f8f8f8;
+  border: 1px solid #5f5f5f;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  height: 38px;}
+.item-color{background-color: rgba(7, 153, 211, 0.3);}

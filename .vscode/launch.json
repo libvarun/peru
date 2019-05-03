@@ -1,0 +1,18 @@
+{
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}\\start.js",
+            "env": {
+                "FORGE_CLIENT_ID": "GkyOPiyKAiBgRdFA2ExRW8OGfG8Bi8oM",
+                "FORGE_CLIENT_SECRET": "aDlaoKxXEbK3Z4o3",
+                "FORGE_MODEL_URN": "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6cGVydWRldi9LMjAtVjAxLm53Yw",
+                "MONGODB_URL": "mongodb+srv://varun:VarunIs*@cluster0-9hpiz.mongodb.net/forge-manufacturing-digital-twin?retryWrites=true"
+            }
+        }
+    ]
+}

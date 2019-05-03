@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PERI POC</title>
+    <!-- Common packages: JQuery & Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="shortcut icon" href=/img/favicon.ico type=image/x-icon>
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/moment.min.js"></script>
+    <script src="/js/clipboard.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="/css/thumbnail-gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+    <!-- Notification ballons -->
+    <!-- <script src="js/libraries/notify.min.js"></script> -->
+
+    <!-- Autodesk Forge Viewer files -->
+    <!-- <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/6.*/style.css" type="text/css" />
+    <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/6.*/viewer3D.js"></script> -->
+        <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/three.min.js?v=v4.2"></script>
+    <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.js?v=v4.2"></script>
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.css?v=v4.2">
+    
+    <!-- <script src="/js/color-extension.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+    <!-- BIM360 packages: login and authentication -->
+    <!-- <script src="/js/oauth.js"></script> -->
+    <script src="/js/ForgeViewer.js"></script>
+    <script src="/js/gallery.js"></script>
+
+</head>
+
+<body class="vsc-initialized">
+    <div class="loader"></div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav left">
+                <li class="logo_header">
+                    <a href="#" target="_blank">
+                        <img alt="Autodesk Forge" src="/img/Peri-logo.png" height="50" /> POC
+                    </a>
+                </li>
+            </ul>   
+        </div>
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- START Viewer -->
+    <div class="viewer_container">
+        <div class="row">
+            <div class="col-md-9" id="forgeViewer"></div>
+            <div class="col-md-3 side_box"><br>
+                <button class="btn btn-success highlight_walls">Highlight Concrete walls</button><br><br>
+                <button class="btn btn-success highlight_slabs">Highlight Concrete Slabs</button><br><br>
+                <div><label>Volume:&nbsp;</label><span class="total_volume"></span>&nbsp;mt3</div>
+                <div><label>Area:&nbsp;</label><span class="total_area"></span>&nbsp;mtsq</div><br>
+                <button class="btn peri_equipment">Show Peri Equipment</button><br><br>
+                <a target="_blank" href="https://docs.b360.autodesk.com/"><button class="btn peri_equipment">Send to PERI</button></a><br><br>
+            </div>
+        </div>
+        
+    </div>
+    <!-- END Viewer -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+
+</body>
+
+</html>
