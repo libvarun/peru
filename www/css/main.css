@@ -173,3 +173,5 @@ body {
   overflow: hidden;
   height: 38px;}
 .item-color{background-color: rgba(7, 153, 211, 0.3);}
+
+.label_box{display: inline-block;height: 20px;width: 20px;vertical-align: bottom;margin-top: 5px;}
